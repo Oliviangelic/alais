@@ -1,0 +1,256 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3 {
+    font-family: century-gothic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    padding: 30px 30px 0px 30px ;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+}
+
+nav a {
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0 5%;
+    color: black;
+}
+
+nav a:hover {
+    color: #b6bdae;
+}
+
+#products-link {
+    color: black;
+    font-weight: 700;
+}
+
+#products-link:hover {
+    color: #b6bdae;
+}
+
+#nav-logo {
+    width: 13%;
+    padding-right: 3%;
+    
+}
+
+
+
+#nav-slogan {
+    letter-spacing: 1px;
+    color: #b6bdae;
+}
+
+
+/* products page */
+.p-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+/* end */
+
+
+/* hero section */
+
+.products-hero {
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero-vid {
+    height: 600px;
+    width: 50%;
+    background-position: center;
+    background-image:url(../../assets/hero_vid.mp4) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#phero-vid-logo {
+    width: 30%;
+    animation: rotation 4s infinite linear;
+
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+.hero-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.hero-right-container h3 {
+    font-size: large;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#hero-right-pic {
+    width: 35%;
+}
+
+.hero-right-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    align-items: center;
+
+}
+
+.hero-c2a {
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+    background-color: #b6bdae;
+    border: 1px solid #b6bdae;
+    color: white;
+    border-radius: 50px;
+    width: 50%;
+}
+
+.hero-c2a:hover {
+    border: 1px solid #b6bdae;
+    color: #b6bdae;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+/* main section */
+
+
+.products-wrapper {
+    display: flex;
+    padding: 3% 0%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.product-container {
+    width: 30%;
+}
+
+
+.prod-img1 {
+    margin: 0px;
+    width: 360px;
+    height: 400px;
+    background-image: url(../../assets/alais_lilpump2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.prod-img1:hover {
+    background-image: url(../../assets/alais_lilpump1.png);
+}
+
+.prod-img2:hover {
+
+    background-image: url(../../assets/alais_dropper1.png);
+}
+
+.prod-img3:hover {
+
+    background-image: url(../../assets/alais_bigpump1.png);
+}
+
+.prod-img2 {
+    margin: 0px;
+    width: 360px;
+    height: 400px;
+
+    background-image: url(../../assets/alais_dropper2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.prod-img3 {
+    margin: 0px;
+    width: 360px;
+    height: 400px;
+   
+    background-image: url(../../assets/alais_bigpump2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.product-title {
+    font-size: larger;
+    padding-top: 30px;
+}
+
+.prod-description {
+    font-size: 12px;
+    width: 86%;
+    padding-bottom: 15px;
+}
+
+.stock-price {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+}
+
+#price {
+    font-weight: 700;
+}
+
+#stock {
+    color: #b6bdae;
+    text-transform: capitalize;
+}

@@ -1,0 +1,62 @@
+###
+GET http://localhost:4700/products
+
+###
+POST http://localhost:4700/addnewproduct
+Content-Type: application/json
+
+{   
+    "name": "brighten: glycolic acid solution",
+    "description": "Reguvenates the skin, aids production of collagen, reduces hyperpigmentation, leaves your skin feeling silky smooth.",
+    "price": 10.99,
+    "inventory": 1,
+    "image": "alais_bigpump2.png",
+    "online": 0
+}
+
+###
+PUT  http://localhost:4700/updateprice
+Content-Type: application/json
+
+{
+    "id": 1,
+    "price": 10.99
+}
+
+###
+PUT http://localhost:4700/updateproducts HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 9,
+    "name": "Skrr",
+    "description": "You have never witnessed this before",
+    "price": 199,
+    "inventory": 0,
+    "image": "alais_bigpump2.png",
+    "online": 0
+}
+
+###
+DELETE http://localhost:4700/deleteproduct
+Content-Type: application/json
+
+{
+    "id": 6
+}
+###
+POST https://localhost:4700/validateuser 
+Content-Type: application/json
+
+{
+    "email": "Oliviangelic@gmail.com",
+    "password": "1234"
+}
+
+###
+PUT http://localhost:4700/setstatus/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "status": false
+}

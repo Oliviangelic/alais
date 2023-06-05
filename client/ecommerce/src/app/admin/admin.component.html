@@ -1,0 +1,44 @@
+<div class="page-wrapper">
+    <div class="admin-heading">
+        <h1>Admin Portal</h1>
+    </div>
+    
+    <div class="addproductbtn">
+        <button>Add Product &#43;</button>
+    </div>
+    
+    <div class="admin-table">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th id="name">Name</th>
+                    <th id="description">Description</th>
+                    <th>Price</th>
+                    <th>Inventory</th>
+                    <th>Image</th>
+                    <th>Online Status</th>
+                    <th>Update/Delete</th>
+                </tr>
+                <tr *ngFor="let product of products">
+                    <td id="id">{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.description}}</td>
+                    <td id="price">{{product.price}}</td>
+                    <td id="inventory">{{product.inventory}}</td>
+                    <td><img class="thumbnail" src="/assets/{{product.image}}" alt="image"></td>
+                    <td>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" [checked]="product.online" (click)="setLiveStatus(product.id, !product.online)">
+                        </div>
+                    </td>
+    
+                    <div class="updelete-buttons">
+                        <button (click)="updateProduct(product.id)" id="update">&#9999;</button> 
+                        <button (click)="deleteProduct(product.id)" id="delete" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-trash"></span></button>
+                    </div>
+    
+                </tr>
+                
+            </table>
+    </div>
+</div>

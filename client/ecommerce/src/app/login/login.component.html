@@ -1,0 +1,34 @@
+
+<div class="login-container">
+    <div class="login-logo-container">
+        <img src="../../assets/alais_logo4.png" alt="alais_logo4" id="login-logo">
+    </div>
+
+    <div class="login-form">
+        <label for="email">email</label>
+        <input type="email" [(ngModel)]="email" id="email" placeholder="your email"><br>
+        <label for="password">password</label>
+        <input type="password" [(ngModel)]="password" id="password" placeholder="password">
+    </div>
+
+    <div class="loginButton">
+        <button (click)="login()" id="loginButton">Log in </button>
+    </div>
+
+    <div class="forgot">
+        <a href="forgotpassword" id="forgotpw">Forgot password</a>
+    </div>
+    
+</div>
+
+    
+
+
+
+<div [hidden]="hideLoginStatus">
+    <div class="message" *ngIf="loginSuccess">Great! You are an authenticated user</div>
+    <div class="message" *ngIf="!loginSuccess">Oops! Check your email and password</div>
+</div>
+
+
+
